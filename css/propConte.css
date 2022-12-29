@@ -1,0 +1,5 @@
+.contenedor {
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+}
