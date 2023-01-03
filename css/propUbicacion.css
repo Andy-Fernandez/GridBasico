@@ -1,0 +1,40 @@
+.contenedor {
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
+}
+.item-1{
+    grid-column: 1/4;
+}
+.item-2{
+    grid-row: 2/4;
+}
+.item-3{
+    grid-column: 2/4;
+    grid-row: 2/4;
+    /* con grid-area */
+    /* grid-area: 2/2/4/4; */
+}
+/* nombrando */
+.nombrando{
+    grid-template-areas:
+    "header header header"
+    "side main main"
+    "side main main";
+}
+.item-1__nombrando{
+    grid-area: header;
+}
+.item-2__nombrando{
+    grid-area: side;
+}
+.item-3__nombrando{
+    grid-area: main;
+}
+/* item */
+.item-2__reto{
+    grid-column: 2/4;
+}
+.item-3__reto{
+    grid-column: 1/3;
+}
