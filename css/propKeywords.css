@@ -1,0 +1,15 @@
+.contenedor {
+    /* grid-template-columns: repeat(4 , 1fr);
+    grid-template-columns: repeat(4 , 1fr) 2fr;
+    grid-template-columns: 1fr 3fr 1fr 2fr; */
+    /* con min-content */
+    grid-template-columns: min-content 1fr min-content 1fr;
+    /* con max-content */
+    grid-template-columns: max-content 1fr max-content 1fr;
+}
+.auto-fill{
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+.auto-fit{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
