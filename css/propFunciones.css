@@ -1,0 +1,11 @@
+/* .contenedor{
+    grid-template-columns: 30px 200px 60px;
+    grid-template-rows: 100px 100px 100px;
+} */
+/* Con minmax a cada columna hasta los 300px*/
+.contenedor{
+    grid-template-columns: minmax(30px, 300px) minmax(200px, 300px) minmax(60px, 300px);
+    /* grid-template-rows: repeat(3, 100px); */
+    /* Haremos que se ajuste de forma automatica */
+    grid-template-rows: repeat(3, auto);
+}
